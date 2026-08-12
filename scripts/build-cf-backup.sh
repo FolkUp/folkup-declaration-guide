@@ -37,9 +37,10 @@ cp -r css js fonts images dist/
 cp -r declaration guide dist/
 
 # Localized entry points (RU / PT live at repo root, not в declaration/ subdir)
-# Fix Iskra S220 OBKHOD brak: /ru/ + /pt/ должны отдавать локализованный контент,
+# Fix Iskra S220 OBKHOD brak: /ru/ + /pt/ + /de/ должны отдавать локализованный контент,
 # а не SPA-fallback к English root index.html
-cp -r ru pt dist/
+# DE added cont+14 S6SCOOP per Bolik DECL v1.2 DE apply Option A (Vanilla HTML per-language dir)
+cp -r ru pt de dist/
 
 # i18n helper script (root-level reference из index.html)
 cp declaration-i18n.js dist/

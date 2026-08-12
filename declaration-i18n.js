@@ -5,6 +5,7 @@
         const path = window.location.pathname;
         if (path.includes('/ru/')) return 'ru';
         if (path.includes('/pt/')) return 'pt';
+        if (path.includes('/de/')) return 'de';
         if (path.includes('/en/')) return 'en';
         return 'en'; // default
     }
