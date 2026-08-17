@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — The Unenclosed Knowledge Declaration</title>
+  <meta name="description" content="This page has moved or does not exist. Return to the Declaration.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Page Not Found — Declaration">
+  <meta property="og:description" content="This page has moved or does not exist. Return to the Declaration.">
+  <meta property="og:image" content="https://declaration.folkup.app/images/og-folkup.png">
+  <meta property="og:url" content="https://declaration.folkup.app/404">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="canonical" href="https://declaration.folkup.app/">
+  <style>
+    :root {
+      --bordo: #5E2F3A;
+      --sage: #4E6B42;
+      --amber: #E8AD4A;
+      --bg: #FEFCF6;
+      --text: #1a1a1a;
+      --muted: #777;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .container { max-width: 42rem; }
+    h1 {
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 300;
+      color: var(--bordo);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      color: var(--sage);
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1.0625rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--bordo);
+      color: var(--bg);
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    a:hover, a:focus-visible { background: var(--amber); color: var(--text); outline: none; }
+    a.secondary { background: transparent; color: var(--bordo); border: 1px solid var(--bordo); }
+    a.secondary:hover, a.secondary:focus-visible { background: var(--bordo); color: var(--bg); }
+    .langs {
+      margin-top: 2.5rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .langs a {
+      background: none;
+      color: var(--sage);
+      padding: 0 0.5rem;
+      text-decoration: underline;
+    }
+    .langs a:hover { background: none; color: var(--bordo); }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>404</h1>
+    <p class="subtitle">Page not found</p>
+    <p>This page has moved, was removed, or never existed. The Declaration remains open.</p>
+    <div class="actions">
+      <a href="/">Read the Declaration</a>
+      <a href="/sign" class="secondary">Sign the Declaration</a>
+    </div>
+    <div class="langs">
+      <a href="/ru/" hreflang="ru">Русский</a> ·
+      <a href="/pt/" hreflang="pt">Português</a>
+    </div>
+  </main>
+</body>
+</html>

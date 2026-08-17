@@ -18,6 +18,13 @@ cp index.html dist/
 # SEO: robots.txt (Q11+F8 canon; follow-up к PR #5 build-copy fix)
 cp robots.txt dist/
 
+# SEO: sitemap.xml + llms.txt (DECL-SEO-1 cont+1 S1VITRINA per Iskra TIKET-06 §1)
+cp sitemap.xml dist/
+cp llms.txt dist/
+
+# 404 page (DECL-SEO-1 cont+1 S1VITRINA — real 404 handler, prior _redirects fallback removed)
+cp 404.html dist/
+
 # Clean-URL conversions (matches production nginx clean-urls)
 for page in cookies privacy terms; do
   mkdir -p "dist/${page}"
@@ -73,6 +80,11 @@ cat > dist/_redirects <<'REDIRECTS'
 # используются напрямую т.к. rewrite target совпадает с file — no loop.
 /ru/*    /ru/index.html    200
 /pt/*    /pt/index.html    200
+/de/*    /de/index.html    200
+
+# 404 catch-all (DECL-SEO-1 cont+1 S1VITRINA — must be LAST rule, first-match-wins).
+# Serves branded 404.html with proper HTTP 404 status для all unmatched paths.
+/*       /404.html         404
 REDIRECTS
 
 echo "Build complete: $(find dist -type f | wc -l) files, $(du -sh dist | awk '{print $1}')"

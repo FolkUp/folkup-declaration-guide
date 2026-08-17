@@ -1,0 +1,41 @@
+# The Unenclosed Knowledge Declaration
+
+> A public manifesto — seven principles against the enclosure of the mind. Initiated by FolkUp, open for signature by any person or organization. Part of the FolkUp ecosystem of open-content publishing.
+
+## About
+
+The Unenclosed Knowledge Declaration is a public manifesto against the growing enclosure of knowledge — paywalls, gated access, algorithmic filtering, artificial scarcity. Seven principles articulate an alternative: knowledge as a commons, open access, transparent attribution, freedom to copy and adapt. Available in English, Russian, Portuguese. Sign electronically — individuals or organizations. Content licensed CC BY-SA 4.0.
+
+## Read and Sign
+
+- [Declaration (English)](https://declaration.folkup.app/): Seven principles + full manifesto text + electronic signature form.
+- [Декларация (Русский)](https://declaration.folkup.app/ru/): Полный текст манифеста и семи принципов на русском.
+- [Declaração (Português)](https://declaration.folkup.app/pt/): Texto completo do manifesto e dos sete princípios em português.
+- [Sign the Declaration](https://declaration.folkup.app/sign): Electronic signature form — individual or organization.
+
+## Legal
+
+- [Privacy Policy](https://declaration.folkup.app/privacy): GDPR-compliant data handling for signatures.
+- [Terms of Use](https://declaration.folkup.app/terms): Content usage rights (CC BY-SA 4.0).
+- [Cookie Policy](https://declaration.folkup.app/cookies): ePrivacy Art. 5(3) opt-in consent.
+
+## Publisher
+
+- [FolkUp](https://folkup.app/): Independent open-content publisher — Andrei Klemenchenok + team of AI fornits. Every publication signed. Content CC BY-SA 4.0.
+- [FolkUp on GitHub](https://github.com/FolkUp): Source repositories.
+
+## Related
+
+- [FolkUp Ecosystem Landing](https://folkup.app/): Main hub — encyclopedias, books, research, declaration.
+- [Books](https://books.folkup.life/): Long-form book trilogy — free EPUB/PDF, banking-level fact verification.
+- [Lucerna](https://lucerna.folkup.app/): OSINT research lab — investigations and methodology.
+
+## Contact
+
+- Editorial + signature verification: anklem@folkup.app
+
+---
+
+License: Content CC BY-SA 4.0 | Code MIT
+Publisher: FolkUp — Andrei Klemenchenok
+Version: 1.2 (2026-03-01)
