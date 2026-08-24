@@ -254,6 +254,30 @@
       opacity: 0.7;
     }
 
+    /* Language switcher — S301-09 Тикет 13 (Andrey mandate cont+8 S8SCOOP 2026-08-24) */
+    .lang-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: var(--light);
+      border-bottom: 1px solid var(--border);
+    }
+    .lang-pill {
+      display: inline-block;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+    .lang-pill:hover { color: var(--bordo); border-color: var(--bordo); }
+    .lang-pill.active { background: var(--bordo); color: #fff; border-color: var(--bordo); }
+    .lang-pill:focus-visible { outline: 2px solid var(--bordo); outline-offset: 2px; }
+
     /* Responsive */
     @media (max-width: 768px) {
       .data-table {
@@ -334,6 +358,14 @@
       </nav>
     </div>
   </header>
+
+  <!-- S301-09 Тикет 13 fix (Andrey mandate cont+8 S8SCOOP 2026-08-24) -->
+  <div class="lang-bar" role="navigation" aria-label="Language selection">
+    <a href="/privacy" class="lang-pill active" lang="en" aria-current="page">English</a>
+    <a href="/ru/" class="lang-pill" lang="ru" hreflang="ru">Русский</a>
+    <a href="/pt/" class="lang-pill" lang="pt" hreflang="pt">Português</a>
+    <a href="/de/" class="lang-pill" lang="de" hreflang="de">Deutsch</a>
+  </div>
 
   <main id="main-content" class="main" role="main">
     <h1 class="page-title">Privacy Policy</h1>
