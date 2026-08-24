@@ -1,0 +1,8 @@
+# Gitleaks ignore — historical scars per Kochegar S1KOCHEGAR cont+2 triage 2026-08-24
+# test_config.js:1 — test fixture placeholder `sk-test...` — false positive
+# api-token-security-incident memo — Telegram Bot token verified REVOKED (HTTP 401 Unauthorized 2026-08-24),
+#   Telegraph API token verified INVALID (ACCESS_TOKEN_INVALID 2026-08-24) — historical scars from 2026-05-10 incident closure
+# Reference: POMETKA-Kochegar-S1KOCHEGAR-cont2-02 + cont2-04 (bridge Drive)
+
+1abc632ae1dbb60539cf86578e92e7dddae56db0:test_config.js:generic-api-key:1
+064f07a08060a9e8832907ec80c975788ac97cda:.claude/projects/C--Users-ankle/memory/api-token-security-incident-2026-05-10.md:generic-api-key:14
