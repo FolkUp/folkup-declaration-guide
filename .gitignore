@@ -237,3 +237,7 @@ dist/
 *.env.*
 !.env.example
 !.env.sample
+
+# Claude Code session artifacts — NEVER commit к public repo (S1KOCHEGAR cont+16 EXT2 P0 Iskra S318-07)
+.claude/
+.claude/**
