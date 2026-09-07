@@ -230,3 +230,10 @@ OneDrive/
 comprovativo_*
 
 dist/
+
+# .env* files SHOULD NOT be committed to public repo — S1KOCHEGAR cont+16 EXT2 P0 (Iskra S318-07 §0)
+# CROWDSEC_LAPI_KEY leaked via dashboard-aggregator.env.backup — filter-repo cleanup + rotation applied
+*.env
+*.env.*
+!.env.example
+!.env.sample
