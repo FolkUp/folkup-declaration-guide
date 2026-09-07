@@ -1,7 +1,18 @@
-# Gitleaks ignore — historical scars
-# S1KOCHEGAR cont+2 triage 2026-08-24 (original) + cont+16 EXT2 refresh 2026-09-07 post-2-round-filter-repo
+# Gitleaks ignore — historical scars (verified false positives OR revoked)
+# S1KOCHEGAR cont+2 triage 2026-08-24 (original) + cont+16 EXT2 refresh 2026-09-07 (post-filter-repo master SHA update)
 #
-# test_config.js:1 — test fixture placeholder `sk-test...` — false positive (Andrey «Test: secret detection в config»)
-# api-token-security-incident memo — Telegram Bot token verified REVOKED (HTTP 401 2026-08-24) + Telegraph API token INVALID
-#   Historical scars 2026-05-10 incident closure; file .claude/ folder gone from history via filter-repo cont+16 EXT2
-# Reference: POMETKA-Kочегар-S1KOCHEGAR-cont2-02/04 + cont+16 EXT2 POMETKA
+# CONTEXT:
+# - test_config.js:1 — test fixture placeholder `sk-test...` — false positive
+#   (Andrey commit «Test: secret detection в config» — intentional test file)
+# - api-token-security-incident-2026-05-10.md — Telegram Bot token verified REVOKED
+#   (HTTP 401 Unauthorized 2026-08-24) + Telegraph API token verified INVALID
+#   (ACCESS_TOKEN_INVALID 2026-08-24) — historical scars from 2026-05-10 incident closure
+# - .claude/ folder gone from master HEAD via cont+16 EXT2 filter-repo; лежит в feature/renovate branches
+#   which are lower priority (not deploy targets); scars documented, threat mitigated
+#
+# Reference: POMETKA-Kочегар-S1KOCHEGAR-cont2-02/04 (bridge Drive) + cont+16 EXT2 POMETKA
+# Iskra S318-07 §0 P0 authorized force-push для CROWDSEC cleanup — done, .env.backup HTTP 404 ✓
+
+1abc632ae1dbb60539cf86578e92e7dddae56db0:test_config.js:generic-api-key:1
+ffd00ba156586b8d7f55f8c216b143660dc368c6:test_config.js:generic-api-key:1
+064f07a08060a9e8832907ec80c975788ac97cda:.claude/projects/C--Users-ankle/memory/api-token-security-incident-2026-05-10.md:generic-api-key:14
